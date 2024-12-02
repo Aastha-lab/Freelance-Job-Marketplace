@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelance Marketplace</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="./assets/images/freelance_logo.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <header class="header">
+
+    <div class="alert">
+      <div class="container">
+        <p class="alert-text">Find Your Next Freelance Job or Hire Talented Professionals!</p>
+      </div>
+    </div>
+
+    <div class="header-top" data-header>
+      <div class="container">
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="input-wrapper" >
+          <input type="search" name="search" placeholder="Search jobs or freelancers" class="search-field" id="Search">
+
+          <button class="search-submit" aria-label="search">
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <a href="#" class="logo">
+          <img src="logo.jpg.jpeg" width="179" height="26" alt="Freelance Marketplace">
+        </a>
+
+        <div class="header-actions">
+
+          <button class="header-action-btn" aria-label="user">
+            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <button class="header-action-btn" aria-label="favourite item">
+            <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+
+            <span class="btn-badge">0</span>
+          </button>
+
+          <button class="header-action-btn" aria-label="cart item">
+            <data class="btn-text" value="0">$0.00</data>
+
+            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+            <span class="btn-badge">0</span>
+          </button>
+
+        </div>
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#home" class="navbar-link has-after">Home</a>
+            </li>
+
+            <li>
+              <!-- <a href="#jobs" class="navbar-link has-after" -->
+              <!-- >Jobs</a> -->
+              <a href="jobs.html">View all jobs</a>
+            </li>
+
+            <li>
+              <a href="freelancersprofile.html" >Freelancers</a>
+            </li>
+
+            <li>
+              <a href="#about" class="navbar-link has-after">About Us</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link has-after">Contact</a>
+            </li>
+
+          </ul>
+        </nav>
+        
+      </div>
+    </div>
+
+  </header>
+
+  <div class="sidebar">
+    <div class="mobile-navbar" data-navbar>
+
+      <div class="wrapper">
+        <a href="#" class="logo">
+          <img src="./assets/images/freelance_logo.jpg" width="179" height="26" alt="Fre elance Marketplace">
+        </a>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="navbar-list">
+
+        <li>
+          <a href="#home" class="navbar-link" data-nav-link>Home</a>
+        </li>
+
+        <li>
+          <a href="#jobs" class="navbar-link" data-nav-link>Jobs</a>
+        </li>
+
+        <li>
+          <a href="#freelancers" class="navbar-link" data-nav-link>Freelancers</a>
+        </li>
+
+        <li>
+          <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+        </li>
+
+        <li>
+          <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="overlay" data-nav-toggler data-overlay></div>
+  </div>
+
+  <main>
+    <article>
+
+      <section class="section hero" id="home" aria-label="hero" data-section>
+        <div class="container">
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-1.jpg')">
+
+                <div class="card-content">
+
+                  <h1 class="h1 hero-title">
+                    Connect with best freelancers for your work
+                  </h1>
+
+                  <p class="hero-text">
+                    Browse through our vast collection of freelance jobs and talented professionals.
+                  </p>
+
+                  <a href="#" class="btn btn-primary">Get Started</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-4.jpg')">
+
+                <div class="card-content">
+
+                  <h1 class="h1 hero-title">
+                    New to freelancing? 
+                    We are here for you
+                  </h1>
+
+                  <p class="hero-text">
+                    Browse through our vast collection of freelance jobs and talented professionals.
+                  </p>
+
+                  <a href="#" class="btn btn-primary">Get Started</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-1.jpg')">
+
+                <div class="card-content">
+
+                  <h1 class="h1 hero-title">
+                    Find Your Next Freelance Job or Hire Talented Professionals!
+                  </h1>
+
+                  <p class="hero-text">
+                    Browse through our vast collection of freelance jobs and talented professionals.
+                  </p>
+
+                  <a href="#" class="btn btn-primary">Get Started</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="section jobs" id="jobs" aria-label="jobs" data-section>
+        <div class="container">
+          <h2 class="h2 section-title">Browse Freelance Jobs</h2>
+          <ul class="has-scrollbar">
+            <!-- Job 1 -->
+            <li class="scrollbar-item">
+              <div class="job-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/job-1 (2).jpg" width="540" height="720" loading="lazy" alt="Web Developer" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="apply for job">
+                      <ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Web Developer</a>
+                  </h3>
+                  <p class="card-text">Looking for an experienced web developer to create a new website.</p>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="5 star rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">5170 reviews</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Job 2 -->
+            <li class="scrollbar-item">
+              <div class="job-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/job-3.jpg" width="540" height="720" loading="lazy" alt="Graphic Designer" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="apply for job">
+                      <ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Graphic Designer</a>
+                  </h3>
+                  <p class="card-text">Seeking a creative graphic designer for branding projects.</p>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="4 star rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">250 reviews</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Job 3 -->
+            <li class="scrollbar-item">
+              <div class="job-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/job-4.jpg" width="540" height="720" loading="lazy" alt="Content Writer" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="apply for job">
+                      <ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Content Writer</a>
+                  </h3>
+                  <p class="card-text">Looking for a skilled content writer for blog posts.</p>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="5 star rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria -hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">1000 reviews</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Job 4 -->
+            <li class="scrollbar-item">
+              <div class="job-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/job-5.jpg" width="540" height="720" loading="lazy" alt="UX/UI Designer" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="apply for job">
+                      <ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">UX/UI Designer</a>
+                  </h3>
+                  <p class="card-text">Seeking a talented UX/UI designer for mobile app design.</p>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="4 star rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">500 reviews</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Job 5 -->
+            <li class="scrollbar-item">
+              <div class="job-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/job-6.jpg" width="540" height="720" loading="lazy" alt="Digital Marketing" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="apply for job">
+                      <ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Digital Marketing</a>
+                  </h3>
+                  <p class="card-text">Looking for a digital marketing expert for social media campaigns.</p>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="5 star rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">2000 reviews</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Job 6 -->
+            <li class="scrollbar-item">
+              <div class="job-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/job-06.jpg" width="540" height="720" loading="lazy" alt="Data Analyst" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="apply for job">
+                      <ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Data Analyst</a>
+                  </h3>
+                  <p class="card-text">Seeking a data analyst for market research and analysis.</p>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="4 star rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class=" rating-text">1500 reviews</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Job 7 -->
+            <li class="scrollbar-item">
+              <div class="job-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/job-06.jpg" width="540" height="720" loading="lazy" alt="Software Engineer" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="apply for job">
+                      <ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Software Engineer</a>
+                  </h3>
+                  <p class="card-text">Looking for a skilled software engineer for mobile app development.</p>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="5 star rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">3000 reviews</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Job 8 -->
+            <li class="scrollbar-item">
+              <div class="job-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/job-06.jpg" width="540" height="720" loading="lazy" alt="IT Project Manager" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="apply for job">
+                      <ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">IT Project Manager</a>
+                  </h3>
+                  <p class="card-text">Seeking an experienced IT project manager for software development projects.</p>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="4 star rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">1000 reviews</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Job 9 -->
+            <li class="scrollbar-item">
+              <div class="job-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/job-6.jpg" width="540" height="720" loading="lazy" alt="Cybersecurity Specialist" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="apply for job">
+                      <ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Cybersecurity Specialist</a>
+                  </h3>
+                  <p class="card-text">Looking for a cybersecurity specialist for network security and penetration testing.</p>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="5 star rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">2500 reviews</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Job 10 -->
+            <li class="scrollbar-item">
+              <div class="job-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/job-10.jpg" width="540" height="720" loading="lazy" alt="DevOps Engineer" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="apply for job">
+                      <ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">DevOps Engineer</a>
+                  </h3>
+                  <p class="card-text">Seeking a DevOps engineer for cloud infrastructure and automation.</p>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="4 star rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">1500 reviews</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+      <section class="section freelancers" id="freelancers" aria-label="freelancers" data-section>
+        <div class="container">
+          <h2 class="h2 section-title">Browse Freelancers</h2>
+          <ul class="has-scrollbar">
+            <!-- Freelancer 1 -->
+            <li class="scrollbar-item">
+              <div class="freelancer-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="freelancer1.jpg" width="540" height="720" loading="lazy" alt="John Doe" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="hire freelancer">
+                      <ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">John Doe</a>
+                  </h3>
+                  <p class="card-text">Experienced web developer with 5+ years of experience.</p>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="5 star rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">1000 reviews</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Freelancer 2 -->
+            <li class="scrollbar-item">
+              <div class="freelancer-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="freelancer2.jpg" width="540" height="720" loading="lazy" alt="Jane Smith" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="hire freelancer">
+                      <ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Jane Smith</a>
+                  </h3>
+                  <p class="card-text">Skilled graphic designer with 3+ years of experience.</p>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="4 star rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">500 reviews</p>
+                  </div >
+                </div>
+              </div>
+            </li>
+            <!-- Freelancer 3 -->
+            <li class="scrollbar-item">
+              <div class="freelancer-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="freelancer3.jpg" width="540" height="720" loading="lazy" alt="Bob Johnson" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="hire freelancer">
+                      <ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Bob Johnson</a>
+                  </h3>
+                  <p class="card-text">Experienced digital marketing expert with 7+ years of experience.</p>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="5 star rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">2000 reviews</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Freelancer 4 -->
+            <li class="scrollbar-item">
+              <div class="freelancer-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="freelancer4.jpg" width="540" height="720" loading="lazy" alt="Alice Brown" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="hire freelancer">
+                      <ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Alice Brown</a>
+                  </h3>
+                  <p class="card-text">Skilled data analyst with 4+ years of experience.</p>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="4 star rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">1500 reviews</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Freelancer 5 -->
+            <li class="scrollbar-item">
+              <div class="freelancer-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="freelancer5.jpg" width="540" height="720" loading="lazy" alt="Mike Davis" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="hire freelancer">
+                      <ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Mike Davis</a>
+                  </h3>
+                  <p class="card-text">Experienced software engineer with 6+ years of experience.</p>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="5 star rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">3000 reviews</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Freelancer 6 -->
+            <li class="scrollbar-item">
+              <div class="freelancer-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/freelancer-06.jpg" width="540" height="720" loading="lazy" alt="Emily Taylor" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="hire freelancer">
+                      <ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Emily Taylor</a>
+                  </h3>
+                  <p class="card-text">Skilled IT project manager with 5+ years of experience.</p>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="4 star rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">1000 reviews</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Freelancer 7 -->
+            <li class="scrollbar-item">
+              <div class="freelancer-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/freelancer-07.jpg" width="540" height="720" loading="lazy" alt="Sarah Lee" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="hire freelancer">
+                      <ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Sarah Lee</a>
+                  </h3>
+                  <p class="card-text">Experienced cybersecurity specialist with 7+ years of experience.</p>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="5 star rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">2500 reviews</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Freelancer 8 -->
+            <li class="scrollbar-item">
+              <div class="freelancer-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/freelancer-08.jpg" width="540" height="720" loading="lazy" alt="Kevin White" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="hire freelancer">
+                      <ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Kevin White</a>
+                  </h3>
+                  <p class="card-text">Skilled DevOps engineer with 4+ years of experience.</p>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="4 star rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">1500 reviews</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+
+     
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" data-section>
+    <div class="container">
+
+      <div class="footer-top">
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">
+              Find a location nearest you. See <a href="#" class="link">Our Offices</a>
+            </p>
+          </li>
+
+          <li>
+            <p class="footer-list-text bold">+391 (0)35 2568 4593</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">hello@domain.com</p>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Useful links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">New Jobs</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">New Freelancers</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="newsletter-title">Stay Updated</p>
+
+          <p class="newsletter-text">
+            Enter your email below to receive updates on new jobs and freelancers.
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Enter your email address" required
+              class="email-field">
+
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <div class="wrapper">
+          <p class="copyright">
+            &copy; 2022 Freelance Marketplace
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <a href="#" class="logo">
+          <img src="logo.jpg.jpeg" width="179" height="26" loading="lazy" alt="Freelance Marketplace">
+        </a>
+
+        <img src="./assets/images/pay.png" width="313" height="28" alt="available all payment method" class="w-100">
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
